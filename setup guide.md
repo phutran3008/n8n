@@ -1,6 +1,6 @@
 Server Ubuntu:
 - VPS Ubuntu Có GPU: curl -L https://bit.ly/n8n_install | sh
-- VPS Ubuntu Không GPU: curl -L https://bit.ly/n8n_install_noai | sh
+- VPS Ubuntu Không GPU: curl -L bit.ly/n8n_noai | sh
 
 Server Debian
 - VPS Debian Không GPU: curl -L https://bit.ly/n8n_install_noai_debian | sh
