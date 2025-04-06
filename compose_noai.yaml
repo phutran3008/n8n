@@ -12,4 +12,4 @@ services:
       - "80:5678"
     volumes:
       - ${CURR_DIR}/vol_n8n:/home/node/.n8n
-      - /mnt/nas:/redfoxnas  # Mount NAS vào /redfoxnas trong container
+      - /mnt/nas:/redfoxnas
