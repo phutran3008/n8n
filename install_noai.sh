@@ -17,5 +17,10 @@ echo "--------- 🟢 Start docker compose up  -----------"
 export CURR_DIR=$(pwd)
 export EXTERNAL_IP=http://"$(hostname -I | cut -f1 -d' ')"
 wget https://raw.githubusercontent.com/phutran3008/n8n/refs/heads/main/compose_noai.yaml -O compose.yaml
+echo "--------- 🔴 Finish compose file download -----------"
+echo "--------- 🟢 Pulling latest n8n image -----------"
+sudo docker pull n8nio/n8n:latest
+echo "--------- 🔴 Finish pulling n8n image -----------"
+echo "--------- 🟢 Start docker compose up -----------"
 sudo -E docker compose up -d
 echo "--------- 🔴 Finish! Wait a few minutes and test in browser at url $EXTERNAL_IP for n8n UI -----------"
